@@ -1,0 +1,69 @@
+{
+  "name": "PHP Testing Environment",
+  "dockerFile": "Dockerfile",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "devsense.phptools-vscode",
+        "wongjn.php-sniffer",
+        "recca0120.vscode-phpunit",
+        "ms-vscode.test-adapter-converter",
+        "hbenl.vscode-test-explorer",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-json",
+        "redhat.vscode-yaml",
+        "ms-vscode.live-server",
+        "ritwickdey.liveserver",
+        "github.vscode-pull-request-github",
+        "github.copilot",
+        "ms-vscode.vscode-todo-highlight",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "php.validate.enable": true,
+        "php.validate.run": "onType",
+        "intelephense.files.maxSize": 5000000,
+        "phpunit.php": "/usr/local/bin/php",
+        "phpunit.phpunit": "./vendor/bin/phpunit",
+        "phpunit.args": [
+          "--configuration",
+          "phpunit.xml"
+        ],
+        "editor.formatOnSave": true,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+        "liveServer.settings.donotShowInfoMsg": true,
+        "liveServer.settings.donotVerifyTags": true
+      }
+    }
+  },
+  "forwardPorts": [
+    8000,
+    3000,
+    5500
+  ],
+  "portsAttributes": {
+    "8000": {
+      "label": "PHP Development Server",
+      "onAutoForward": "notify"
+    },
+    "3000": {
+      "label": "Node Development Server",
+      "onAutoForward": "notify"
+    },
+    "5500": {
+      "label": "Live Server",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": ".devcontainer/setup.sh",
+  "remoteUser": "root",
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
+  ]
+}

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/workspaces/php-intro/phpunit.xml" tests="40" assertions="0" errors="40" failures="0" skipped="0" time="0.000000">
+    <testsuite name="Exercises" tests="40" assertions="0" errors="40" failures="0" skipped="0" time="0.000000">
+      <testsuite name="Tests\CalculatorTest" file="/workspaces/php-intro/tests/CalculatorTest.php" tests="9" assertions="0" errors="9" failures="0" skipped="0" time="0.000000">
+        <testcase name="testAddition" file="/workspaces/php-intro/tests/CalculatorTest.php" line="18" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\CalculatorTest::testAddition
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+        </testcase>
+        <testcase name="testSubtraction" file="/workspaces/php-intro/tests/CalculatorTest.php" line="24" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\CalculatorTest::testSubtraction
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+        </testcase>
+        <testcase name="testMultiplication" file="/workspaces/php-intro/tests/CalculatorTest.php" line="30" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\CalculatorTest::testMultiplication
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+        </testcase>
+        <testcase name="testDivision" file="/workspaces/php-intro/tests/CalculatorTest.php" line="36" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\CalculatorTest::testDivision
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+        </testcase>
+        <testcase name="testDivisionByZero" file="/workspaces/php-intro/tests/CalculatorTest.php" line="42" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\CalculatorTest::testDivisionByZero
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+        </testcase>
+        <testsuite name="Tests\CalculatorTest::testCalculationsWithDataProvider" tests="4" assertions="0" errors="4" failures="0" skipped="0" time="0.000000">
+          <testcase name="testCalculationsWithDataProvider with data set #0" file="/workspaces/php-intro/tests/CalculatorTest.php" line="49" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\CalculatorTest::testCalculationsWithDataProvider with data set #0
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+          </testcase>
+          <testcase name="testCalculationsWithDataProvider with data set #1" file="/workspaces/php-intro/tests/CalculatorTest.php" line="49" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\CalculatorTest::testCalculationsWithDataProvider with data set #1
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+          </testcase>
+          <testcase name="testCalculationsWithDataProvider with data set #2" file="/workspaces/php-intro/tests/CalculatorTest.php" line="49" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\CalculatorTest::testCalculationsWithDataProvider with data set #2
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+          </testcase>
+          <testcase name="testCalculationsWithDataProvider with data set #3" file="/workspaces/php-intro/tests/CalculatorTest.php" line="49" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\CalculatorTest::testCalculationsWithDataProvider with data set #3
+Error: Class "Exercises\Calculator" not found
+
+/workspaces/php-intro/tests/CalculatorTest.php:15</error>
+          </testcase>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Tests\PhpDataTypesTest" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" tests="31" assertions="0" errors="31" failures="0" skipped="0" time="0.000000">
+        <testcase name="testGetDataType" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="22" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testGetDataType
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsBool" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="36" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsBool
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsInteger" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="49" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsInteger
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsFloat" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="62" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsFloat
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsString" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="75" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsString
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsArray" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="88" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsArray
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsObject" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="101" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsObject
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsNull" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="113" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsNull
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testConvertToBool" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="125" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testConvertToBool
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testConvertToInt" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="148" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testConvertToInt
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testConvertToFloat" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="162" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testConvertToFloat
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testConvertToString" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="176" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testConvertToString
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testCreateMixedArray" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="189" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testCreateMixedArray
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsSet" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="215" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsSet
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testIsEmpty" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="230" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testIsEmpty
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testGetVarDump" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="251" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testGetVarDump
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testStrictEquals" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="266" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testStrictEquals
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testcase name="testLooseEquals" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="282" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+          <error type="Error">Tests\PhpDataTypesTest::testLooseEquals
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+        </testcase>
+        <testsuite name="Tests\PhpDataTypesTest::testVariousTypes" tests="13" assertions="0" errors="13" failures="0" skipped="0" time="0.000000">
+          <testcase name="testVariousTypes with data set #0" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #0
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #1" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #1
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #2" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #2
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #3" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #3
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #4" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #4
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #5" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #5
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #6" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #6
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #7" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #7
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #8" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #8
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #9" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #9
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #10" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #10
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #11" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #11
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+          <testcase name="testVariousTypes with data set #12" file="/workspaces/php-intro/tests/PhpDataTypesTest.php" line="302" class="Tests\PhpDataTypesTest" classname="Tests.PhpDataTypesTest" assertions="0" time="0.000000">
+            <error type="Error">Tests\PhpDataTypesTest::testVariousTypes with data set #12
+Error: Class "Exercises\PhpDataTypes" not found
+
+/workspaces/php-intro/tests/PhpDataTypesTest.php:16</error>
+          </testcase>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "estructura-de-datos"
+assignment: "php-intro"
+owner:
+  username: "Rubio205"
+  id: 92256758
+  accepted_at: "2026-09-08T21:39:15Z"
+source:
+  owner: "TDHclassroom"
+  owner_id: 219900396
+  repo: "php-intro"
+  branch: "main"

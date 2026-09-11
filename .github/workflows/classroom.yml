@@ -1,0 +1,152 @@
+name: Autograding Tests
+"on":
+  push:
+  repository_dispatch:
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Ejercicio 0 - Calculator
+        id: calculator
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Ejercicio 0 - Calculator
+          setup-command: composer install --no-interaction --prefer-dist --optimize-autoloader
+          command: ./vendor/bin/phpunit tests/CalculatorTest.php --testdox
+          timeout: 30
+          max-score: 15
+      - name: Ejercicio 1 - Type Identifier
+        id: typeidentifier
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Ejercicio 1 - Type Identifier
+          setup-command: ""
+          command: ./vendor/bin/phpunit tests/TypeIdentifierTest.php --testdox
+          timeout: 30
+          max-score: 10
+      - name: Ejercicio 2 - Type Checker
+        id: typechecker
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Ejercicio 2 - Type Checker
+          setup-command: ""
+          command: ./vendor/bin/phpunit tests/TypeCheckerTest.php --testdox
+          timeout: 30
+          max-score: 20
+      - name: Ejercicio 3 - Type Converter
+        id: typeconverter
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Ejercicio 3 - Type Converter
+          setup-command: ""
+          command: ./vendor/bin/phpunit tests/TypeConverterTest.php --testdox
+          timeout: 30
+          max-score: 20
+      - name: Ejercicio 4 - Mixed Array Creator
+        id: mixedarray
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Ejercicio 4 - Mixed Array Creator
+          setup-command: ""
+          command: ./vendor/bin/phpunit tests/MixedArrayCreatorTest.php --testdox
+          timeout: 30
+          max-score: 10
+      - name: Ejercicio 5 - State Checker
+        id: statechecker
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Ejercicio 5 - State Checker
+          setup-command: ""
+          command: ./vendor/bin/phpunit tests/StateCheckerTest.php --testdox
+          timeout: 30
+          max-score: 10
+      - name: Ejercicio 6 - Comparator
+        id: comparator
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Ejercicio 6 - Comparator
+          setup-command: ""
+          command: ./vendor/bin/phpunit tests/ComparatorTest.php --testdox
+          timeout: 30
+          max-score: 10
+      - name: Ejercicio 7 - Debugger
+        id: debugger
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Ejercicio 7 - Debugger
+          setup-command: ""
+          command: ./vendor/bin/phpunit tests/DebuggerTest.php --testdox
+          timeout: 30
+          max-score: 5
+      - name: Autograding Reporter
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          CALCULATOR_RESULTS: "${{steps.calculator.outputs.result}}"
+          TYPEIDENTIFIER_RESULTS: "${{steps.typeidentifier.outputs.result}}"
+          TYPECHECKER_RESULTS: "${{steps.typechecker.outputs.result}}"
+          TYPECONVERTER_RESULTS: "${{steps.typeconverter.outputs.result}}"
+          MIXEDARRAY_RESULTS: "${{steps.mixedarray.outputs.result}}"
+          STATECHECKER_RESULTS: "${{steps.statechecker.outputs.result}}"
+          COMPARATOR_RESULTS: "${{steps.comparator.outputs.result}}"
+          DEBUGGER_RESULTS: "${{steps.debugger.outputs.result}}"
+        with:
+          runners: calculator,typeidentifier,typechecker,typeconverter,mixedarray,statechecker,comparator,debugger
+
+      - name: Send Results to Google Sheets
+        if: always()
+        run: |
+          STUDENT_NAME="${{ github.actor }}"
+          REPO_NAME="${{ github.repository }}"
+          COMMIT_SHA="${{ github.sha }}"
+          COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          # Calcular puntuación total
+          CALCULATOR_SCORE="${{ steps.calculator.outputs.points }}"
+          TYPE_ID_SCORE="${{ steps.typeidentifier.outputs.points }}"
+          TYPE_CHECK_SCORE="${{ steps.typechecker.outputs.points }}"
+          TYPE_CONV_SCORE="${{ steps.typeconverter.outputs.points }}"
+          MIXED_SCORE="${{ steps.mixedarray.outputs.points }}"
+          STATE_SCORE="${{ steps.statechecker.outputs.points }}"
+          COMP_SCORE="${{ steps.comparator.outputs.points }}"
+          DEBUG_SCORE="${{ steps.debugger.outputs.points }}"
+          
+          TOTAL_SCORE=$((CALCULATOR_SCORE + TYPE_ID_SCORE + TYPE_CHECK_SCORE + TYPE_CONV_SCORE + MIXED_SCORE + STATE_SCORE + COMP_SCORE + DEBUG_SCORE))
+          MAX_SCORE=100
+
+          JSON_DATA=$(cat <<EOF
+          {
+            "student_name": "$STUDENT_NAME",
+            "repository": "$REPO_NAME",
+            "commit_sha": "$COMMIT_SHA",
+            "commit_message": "$COMMIT_MESSAGE",
+            "timestamp": "$TIMESTAMP",
+            "score": "$TOTAL_SCORE",
+            "max_score": "$MAX_SCORE",
+            "calculator": "$CALCULATOR_SCORE",
+            "type_identifier": "$TYPE_ID_SCORE",
+            "type_checker": "$TYPE_CHECK_SCORE",
+            "type_converter": "$TYPE_CONV_SCORE",
+            "mixed_array": "$MIXED_SCORE",
+            "state_checker": "$STATE_SCORE",
+            "comparator": "$COMP_SCORE",
+            "debugger": "$DEBUG_SCORE"
+          }
+          EOF
+          )
+
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -d "$JSON_DATA" \
+            "${{ secrets.GOOGLE_SHEETS_WEBHOOK_URL }}" \
+            --max-time 30 \
+            --retry 2 \
+            --retry-delay 5 \
+            || echo "⚠️  Warning: Failed to send results to Google Sheets, but continuing..."

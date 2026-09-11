@@ -1,0 +1,17 @@
+# Forzar finales de línea LF para scripts ejecutables y archivos de código
+*.php    text eol=lf
+*.sh     text eol=lf
+*.py     text eol=lf
+*.js     text eol=lf
+*.json   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.md     text eol=lf
+Makefile text eol=lf
+composer.json text eol=lf
+composer.lock text eol=lf
+
+# Ejemplos específicos de archivos ejecutables en Laravel, Symfony, etc.
+artisan          text eol=lf
+phpunit          text eol=lf
+symfony          text eol=lf
