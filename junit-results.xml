@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\TypeIdentifierTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" tests="7" assertions="17" errors="0" failures="0" skipped="0" time="0.609397">
-    <testcase name="testGetDataTypeBoolean" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="21" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="2" time="0.605911"/>
-    <testcase name="testGetDataTypeInteger" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="30" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="3" time="0.000537"/>
-    <testcase name="testGetDataTypeFloat" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="40" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="3" time="0.000490"/>
-    <testcase name="testGetDataTypeString" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="50" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="3" time="0.000581"/>
-    <testcase name="testGetDataTypeArray" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="60" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="3" time="0.000772"/>
-    <testcase name="testGetDataTypeObject" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="70" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="2" time="0.000595"/>
-    <testcase name="testGetDataTypeNull" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="79" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="1" time="0.000511"/>
+  <testsuite name="Tests\TypeConverterTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeConverterTest.php" tests="5" assertions="33" errors="0" failures="0" skipped="0" time="0.699747">
+    <testcase name="testConvertToBoolTrue" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeConverterTest.php" line="20" class="Tests\TypeConverterTest" classname="Tests.TypeConverterTest" assertions="6" time="0.620947"/>
+    <testcase name="testConvertToBoolFalse" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeConverterTest.php" line="33" class="Tests\TypeConverterTest" classname="Tests.TypeConverterTest" assertions="7" time="0.030463"/>
+    <testcase name="testConvertToInt" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeConverterTest.php" line="47" class="Tests\TypeConverterTest" classname="Tests.TypeConverterTest" assertions="7" time="0.047011"/>
+    <testcase name="testConvertToFloat" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeConverterTest.php" line="61" class="Tests\TypeConverterTest" classname="Tests.TypeConverterTest" assertions="7" time="0.000647"/>
+    <testcase name="testConvertToString" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeConverterTest.php" line="75" class="Tests\TypeConverterTest" classname="Tests.TypeConverterTest" assertions="6" time="0.000679"/>
   </testsuite>
 </testsuites>
