@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\ComparatorTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/ComparatorTest.php" tests="4" assertions="21" errors="0" failures="0" skipped="0" time="1.841946">
-    <testcase name="testStrictEqualsSameTypeAndValue" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/ComparatorTest.php" line="20" class="Tests\ComparatorTest" classname="Tests.ComparatorTest" assertions="5" time="1.761403"/>
-    <testcase name="testStrictEqualsDifferentTypes" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/ComparatorTest.php" line="32" class="Tests\ComparatorTest" classname="Tests.ComparatorTest" assertions="5" time="0.079542"/>
-    <testcase name="testLooseEqualsSameValue" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/ComparatorTest.php" line="44" class="Tests\ComparatorTest" classname="Tests.ComparatorTest" assertions="7" time="0.000490"/>
-    <testcase name="testLooseEqualsDifferentValues" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/ComparatorTest.php" line="60" class="Tests\ComparatorTest" classname="Tests.ComparatorTest" assertions="4" time="0.000511"/>
+  <testsuite name="Tests\DebuggerTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/DebuggerTest.php" tests="7" assertions="10" errors="0" failures="0" skipped="0" time="1.197814">
+    <testcase name="testGetVarDumpInteger" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/DebuggerTest.php" line="20" class="Tests\DebuggerTest" classname="Tests.DebuggerTest" assertions="1" time="0.696865"/>
+    <testcase name="testGetVarDumpString" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/DebuggerTest.php" line="29" class="Tests\DebuggerTest" classname="Tests.DebuggerTest" assertions="1" time="0.000507"/>
+    <testcase name="testGetVarDumpBoolean" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/DebuggerTest.php" line="38" class="Tests\DebuggerTest" classname="Tests.DebuggerTest" assertions="2" time="0.000526"/>
+    <testcase name="testGetVarDumpNull" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/DebuggerTest.php" line="50" class="Tests\DebuggerTest" classname="Tests.DebuggerTest" assertions="1" time="0.000461"/>
+    <testcase name="testGetVarDumpArray" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/DebuggerTest.php" line="59" class="Tests\DebuggerTest" classname="Tests.DebuggerTest" assertions="1" time="0.000480"/>
+    <testcase name="testGetVarDumpFloat" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/DebuggerTest.php" line="68" class="Tests\DebuggerTest" classname="Tests.DebuggerTest" assertions="1" time="0.000650"/>
+    <testcase name="testOutputIsCaptured" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/DebuggerTest.php" line="77" class="Tests\DebuggerTest" classname="Tests.DebuggerTest" assertions="3" time="0.498327"/>
   </testsuite>
 </testsuites>
