@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\CalculatorTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" tests="9" assertions="13" errors="0" failures="0" skipped="0" time="0.647470">
-    <testcase name="testAddition" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="18" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="1" time="0.535574"/>
-    <testcase name="testSubtraction" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="24" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="1" time="0.000992"/>
-    <testcase name="testMultiplication" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="30" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="1" time="0.000712"/>
-    <testcase name="testDivision" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="36" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="1" time="0.000303"/>
-    <testcase name="testDivisionByZero" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="42" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="1" time="0.107900"/>
-    <testsuite name="Tests\CalculatorTest::testCalculationsWithDataProvider" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="0.001988">
-      <testcase name="testCalculationsWithDataProvider with data set #0" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="49" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="2" time="0.000504"/>
-      <testcase name="testCalculationsWithDataProvider with data set #1" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="49" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="2" time="0.000420"/>
-      <testcase name="testCalculationsWithDataProvider with data set #2" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="49" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="2" time="0.000495"/>
-      <testcase name="testCalculationsWithDataProvider with data set #3" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/CalculatorTest.php" line="49" class="Tests\CalculatorTest" classname="Tests.CalculatorTest" assertions="2" time="0.000570"/>
-    </testsuite>
+  <testsuite name="Tests\TypeIdentifierTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" tests="7" assertions="17" errors="0" failures="0" skipped="0" time="0.609397">
+    <testcase name="testGetDataTypeBoolean" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="21" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="2" time="0.605911"/>
+    <testcase name="testGetDataTypeInteger" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="30" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="3" time="0.000537"/>
+    <testcase name="testGetDataTypeFloat" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="40" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="3" time="0.000490"/>
+    <testcase name="testGetDataTypeString" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="50" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="3" time="0.000581"/>
+    <testcase name="testGetDataTypeArray" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="60" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="3" time="0.000772"/>
+    <testcase name="testGetDataTypeObject" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="70" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="2" time="0.000595"/>
+    <testcase name="testGetDataTypeNull" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeIdentifierTest.php" line="79" class="Tests\TypeIdentifierTest" classname="Tests.TypeIdentifierTest" assertions="1" time="0.000511"/>
   </testsuite>
 </testsuites>
