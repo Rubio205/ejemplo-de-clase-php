@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\MixedArrayCreatorTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" tests="4" assertions="14" errors="0" failures="0" skipped="0" time="0.781961">
-    <testcase name="testCreateMixedArray" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" line="20" class="Tests\MixedArrayCreatorTest" classname="Tests.MixedArrayCreatorTest" assertions="1" time="0.628249"/>
-    <testcase name="testArrayCount" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" line="39" class="Tests\MixedArrayCreatorTest" classname="Tests.MixedArrayCreatorTest" assertions="1" time="0.060538"/>
-    <testcase name="testElementTypes" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" line="48" class="Tests\MixedArrayCreatorTest" classname="Tests.MixedArrayCreatorTest" assertions="6" time="0.055596"/>
-    <testcase name="testElementValues" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" line="63" class="Tests\MixedArrayCreatorTest" classname="Tests.MixedArrayCreatorTest" assertions="6" time="0.037579"/>
+  <testsuite name="Tests\StateCheckerTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/StateCheckerTest.php" tests="4" assertions="16" errors="0" failures="0" skipped="0" time="0.408343">
+    <testcase name="testIsSetWithDefinedValues" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/StateCheckerTest.php" line="20" class="Tests\StateCheckerTest" classname="Tests.StateCheckerTest" assertions="4" time="0.390712"/>
+    <testcase name="testIsSetWithNull" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/StateCheckerTest.php" line="32" class="Tests\StateCheckerTest" classname="Tests.StateCheckerTest" assertions="1" time="0.017049"/>
+    <testcase name="testIsEmptyWithEmptyValues" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/StateCheckerTest.php" line="41" class="Tests\StateCheckerTest" classname="Tests.StateCheckerTest" assertions="7" time="0.000318"/>
+    <testcase name="testIsEmptyWithNonEmptyValues" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/StateCheckerTest.php" line="55" class="Tests\StateCheckerTest" classname="Tests.StateCheckerTest" assertions="4" time="0.000264"/>
   </testsuite>
 </testsuites>
