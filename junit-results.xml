@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\TypeCheckerTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeCheckerTest.php" tests="7" assertions="40" errors="0" failures="0" skipped="0" time="0.499398">
-    <testcase name="testIsBool" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeCheckerTest.php" line="21" class="Tests\TypeCheckerTest" classname="Tests.TypeCheckerTest" assertions="6" time="0.495130"/>
-    <testcase name="testIsInteger" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeCheckerTest.php" line="34" class="Tests\TypeCheckerTest" classname="Tests.TypeCheckerTest" assertions="6" time="0.000731"/>
-    <testcase name="testIsFloat" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeCheckerTest.php" line="47" class="Tests\TypeCheckerTest" classname="Tests.TypeCheckerTest" assertions="6" time="0.000661"/>
-    <testcase name="testIsString" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeCheckerTest.php" line="60" class="Tests\TypeCheckerTest" classname="Tests.TypeCheckerTest" assertions="6" time="0.000789"/>
-    <testcase name="testIsArray" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeCheckerTest.php" line="73" class="Tests\TypeCheckerTest" classname="Tests.TypeCheckerTest" assertions="6" time="0.000712"/>
-    <testcase name="testIsObject" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeCheckerTest.php" line="86" class="Tests\TypeCheckerTest" classname="Tests.TypeCheckerTest" assertions="5" time="0.000749"/>
-    <testcase name="testIsNull" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/TypeCheckerTest.php" line="98" class="Tests\TypeCheckerTest" classname="Tests.TypeCheckerTest" assertions="5" time="0.000625"/>
+  <testsuite name="Tests\MixedArrayCreatorTest" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" tests="4" assertions="14" errors="0" failures="0" skipped="0" time="0.781961">
+    <testcase name="testCreateMixedArray" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" line="20" class="Tests\MixedArrayCreatorTest" classname="Tests.MixedArrayCreatorTest" assertions="1" time="0.628249"/>
+    <testcase name="testArrayCount" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" line="39" class="Tests\MixedArrayCreatorTest" classname="Tests.MixedArrayCreatorTest" assertions="1" time="0.060538"/>
+    <testcase name="testElementTypes" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" line="48" class="Tests\MixedArrayCreatorTest" classname="Tests.MixedArrayCreatorTest" assertions="6" time="0.055596"/>
+    <testcase name="testElementValues" file="/workspaces/estructura-de-datos-php-intro-rubio205-main/tests/MixedArrayCreatorTest.php" line="63" class="Tests\MixedArrayCreatorTest" classname="Tests.MixedArrayCreatorTest" assertions="6" time="0.037579"/>
   </testsuite>
 </testsuites>
